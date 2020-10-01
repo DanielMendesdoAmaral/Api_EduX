@@ -1,0 +1,2024 @@
+{
+	"info": {
+		"_postman_id": "032fcfb8-b0d1-4405-b779-36c8a1eba162",
+		"name": "API_Edux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Perfil",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/perfil",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissao\": \"Aluno\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/perfil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"perfil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/perfil",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissao\": \"Instituição\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/perfil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"perfil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/perfil/buscar/id/cd37c074-b44c-4bf2-8a7e-d0d358a897b5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissao\": \"Instituição\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/perfil/buscar/id/cd37c074-b44c-4bf2-8a7e-d0d358a897b5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"perfil",
+								"buscar",
+								"id",
+								"cd37c074-b44c-4bf2-8a7e-d0d358a897b5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/perfil/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissao\": \"APAGAAIJDNDSAJDADAR\",\r\n    \"usuarios\": null,\r\n    \"id\": \"bdf62cd6-ae5a-4b48-b33a-745264ea6d09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/perfil/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"perfil",
+								"bdf62cd6-ae5a-4b48-b33a-745264ea6d09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/perfil/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissao\": \"APAGAAIJDNDSAJDADAR\",\r\n    \"usuarios\": null,\r\n    \"id\": \"bdf62cd6-ae5a-4b48-b33a-745264ea6d09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/perfil/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"perfil",
+								"bdf62cd6-ae5a-4b48-b33a-745264ea6d09"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Instituição\",\r\n    \"email\": \"daniel@gmail.com\",\r\n    \"senha\": \"daniel123\",\r\n    \"dataUltimoAcesso\": \"2003-03-03T00:00:00\",\r\n    \"idPerfil\": \"cd37c074-b44c-4bf2-8a7e-d0d358a897b5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/usuario/buscar/id/217dc127-54ff-4113-9ead-6a5f198a5363",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Instituição\",\r\n    \"email\": \"daniel@gmail.com\",\r\n    \"senha\": \"daniel123\",\r\n    \"dataUltimoAcesso\": \"2003-03-03T00:00:00\",\r\n    \"idPerfil\": \"cd37c074-b44c-4bf2-8a7e-d0d358a897b5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/usuario/buscar/id/217dc127-54ff-4113-9ead-6a5f198a5363",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"usuario",
+								"buscar",
+								"id",
+								"217dc127-54ff-4113-9ead-6a5f198a5363"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/usuario/217dc127-54ff-4113-9ead-6a5f198a5363",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Daniel\",\r\n    \"email\": \"daniel@gmail.com\",\r\n    \"senha\": \"daniel123\",\r\n    \"dataUltimoAcesso\": \"2003-03-03T00:00:00\",\r\n    \"idPerfil\": \"cd37c074-b44c-4bf2-8a7e-d0d358a897b5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/usuario/217dc127-54ff-4113-9ead-6a5f198a5363",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"usuario",
+								"217dc127-54ff-4113-9ead-6a5f198a5363"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/usuario/217dc127-54ff-4113-9ead-6a5f198a5363",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Daniel\",\r\n    \"email\": \"daniel@gmail.com\",\r\n    \"senha\": \"daniel123\",\r\n    \"dataUltimoAcesso\": \"2003-03-03T00:00:00\",\r\n    \"idPerfil\": \"cd37c074-b44c-4bf2-8a7e-d0d358a897b5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/usuario/217dc127-54ff-4113-9ead-6a5f198a5363",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"usuario",
+								"217dc127-54ff-4113-9ead-6a5f198a5363"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Daniel\",\r\n    \"email\": \"daniel@gmail.com\",\r\n    \"senha\": \"daniel123\",\r\n    \"dataUltimoAcesso\": \"2003-03-03T00:00:00\",\r\n    \"idPerfil\": \"846cb301-c9ca-42fd-8273-16c5ca926bc6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Instituicao",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/instituicao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Senaii\",\r\n    \"logradouro\": \"Alameda Barão de Limeira\",\r\n    \"numero\": \"145\",\r\n    \"complemento\": \"\",\r\n    \"bairro\": \"Santa Cecília\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"UF\": \"SP\",\r\n    \"CEP\": \"08320-170\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/instituicao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"instituicao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/instituicao/buscar/id/20d40c29-4dc4-4fd8-b88c-004646e5dce6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Senaii\",\r\n    \"logradouro\": \"Alameda Barão de Limeira\",\r\n    \"numero\": \"145\",\r\n    \"complemento\": \"\",\r\n    \"bairro\": \"Santa Cecília\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"UF\": \"SP\",\r\n    \"CEP\": \"08320-170\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/instituicao/buscar/id/20d40c29-4dc4-4fd8-b88c-004646e5dce6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"instituicao",
+								"buscar",
+								"id",
+								"20d40c29-4dc4-4fd8-b88c-004646e5dce6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/instituicao/buscar/id/20d40c29-4dc4-4fd8-b88c-004646e5dce6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Senaii\",\r\n    \"logradouro\": \"Alameda Barão de Limeira\",\r\n    \"numero\": \"145\",\r\n    \"complemento\": \"\",\r\n    \"bairro\": \"Santa Cecília\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"UF\": \"SP\",\r\n    \"CEP\": \"08320-170\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/instituicao/buscar/nome/Senaii",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"instituicao",
+								"buscar",
+								"nome",
+								"Senaii"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/instituicao/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Senaii\",\r\n    \"logradouro\": \"Alameda Barão de Limeira\",\r\n    \"numero\": \"145\",\r\n    \"complemento\": \"\",\r\n    \"bairro\": \"Santa Cecília\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"UF\": \"SP\",\r\n    \"CEP\": \"08320-170\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/instituicao/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"instituicao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/instituicao/20d40c29-4dc4-4fd8-b88c-004646e5dce6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Senai\",\r\n    \"logradouro\": \"Alameda Barão de Limeira\",\r\n    \"numero\": \"145\",\r\n    \"complemento\": \"\",\r\n    \"bairro\": \"Santa Cecília\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"UF\": \"SP\",\r\n    \"CEP\": \"08320-170\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/instituicao/20d40c29-4dc4-4fd8-b88c-004646e5dce6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"instituicao",
+								"20d40c29-4dc4-4fd8-b88c-004646e5dce6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/instituicao/20d40c29-4dc4-4fd8-b88c-004646e5dce6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Senai\",\r\n    \"logradouro\": \"Alameda Barão de Limeira\",\r\n    \"numero\": \"145\",\r\n    \"complemento\": \"\",\r\n    \"bairro\": \"Santa Cecília\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"UF\": \"SP\",\r\n    \"CEP\": \"08320-170\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/instituicao/20d40c29-4dc4-4fd8-b88c-004646e5dce6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"instituicao",
+								"20d40c29-4dc4-4fd8-b88c-004646e5dce6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"Oculto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/categoria/buscar/id/8f455ca0-009d-44e8-8b9b-964c46464527",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"Oculto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/categoria/buscar/id/8f455ca0-009d-44e8-8b9b-964c46464527",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"categoria",
+								"buscar",
+								"id",
+								"8f455ca0-009d-44e8-8b9b-964c46464527"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/categoria/buscar/categoria/Oculto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"Oculto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/categoria/buscar/categoria/Oculto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"categoria",
+								"buscar",
+								"categoria",
+								"Oculto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/categoria",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"Oculto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/categoria/8f455ca0-009d-44e8-8b9b-964c46464527",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"Desejavel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/categoria/8f455ca0-009d-44e8-8b9b-964c46464527",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"categoria",
+								"8f455ca0-009d-44e8-8b9b-964c46464527"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/categoria/8f455ca0-009d-44e8-8b9b-964c46464527",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"Desejavel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/categoria/8f455ca0-009d-44e8-8b9b-964c46464527",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"categoria",
+								"8f455ca0-009d-44e8-8b9b-964c46464527"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Objetivo",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/objetivo/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Prestar atenção em detalhes\",\r\n    \"idCategoria\": \"f266d890-a80b-424b-b7b8-74b697cc6abb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/objetivo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"objetivo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/objetivo/buscar/id/02075a5c-78da-46c7-9d53-72645ccfe89d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Prestar atenção em detalhes\",\r\n    \"idCategoria\": \"f266d890-a80b-424b-b7b8-74b697cc6abb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/objetivo/buscar/id/02075a5c-78da-46c7-9d53-72645ccfe89d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"objetivo",
+								"buscar",
+								"id",
+								"02075a5c-78da-46c7-9d53-72645ccfe89d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/objetivo/buscar/termo/aten",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Prestar atenção em detalhes\",\r\n    \"idCategoria\": \"f266d890-a80b-424b-b7b8-74b697cc6abb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/objetivo/buscar/termo/aten",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"objetivo",
+								"buscar",
+								"termo",
+								"aten"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/objetivo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Prestar atenção em detalhes\",\r\n    \"idCategoria\": \"f266d890-a80b-424b-b7b8-74b697cc6abb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/objetivo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"objetivo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/objetivo/02075a5c-78da-46c7-9d53-72645ccfe89d",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Prestar atenção em detalhes.\",\r\n    \"idCategoria\": \"f266d890-a80b-424b-b7b8-74b697cc6abb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/objetivo/02075a5c-78da-46c7-9d53-72645ccfe89d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"objetivo",
+								"02075a5c-78da-46c7-9d53-72645ccfe89d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/objetivo/02075a5c-78da-46c7-9d53-72645ccfe89d",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Prestar atenção em detalhes.\",\r\n    \"idCategoria\": \"f266d890-a80b-424b-b7b8-74b697cc6abb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/objetivo/02075a5c-78da-46c7-9d53-72645ccfe89d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"objetivo",
+								"02075a5c-78da-46c7-9d53-72645ccfe89d"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Curso",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/curso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Desenvolvimento\",\r\n    \"idInstituicao\": \"94ba252a-ade1-4f71-827c-bf1faaa40ab6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curso",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curso",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Desenvolvimento\",\r\n    \"idInstituicao\": \"94ba252a-ade1-4f71-827c-bf1faaa40ab6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curso",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curso/buscar/id/e95efa23-4ae8-4c9b-a746-88b639bead87",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Desenvolvimento\",\r\n    \"idInstituicao\": \"94ba252a-ade1-4f71-827c-bf1faaa40ab6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curso/buscar/id/e95efa23-4ae8-4c9b-a746-88b639bead87",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curso",
+								"buscar",
+								"id",
+								"e95efa23-4ae8-4c9b-a746-88b639bead87"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curso/buscar/titulo/des",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Desenvolvimento\",\r\n    \"idInstituicao\": \"94ba252a-ade1-4f71-827c-bf1faaa40ab6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curso/buscar/titulo/des",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curso",
+								"buscar",
+								"titulo",
+								"des"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curso/e95efa23-4ae8-4c9b-a746-88b639bead87",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Desenvolvimento de Sistemas\",\r\n    \"idInstituicao\": \"94ba252a-ade1-4f71-827c-bf1faaa40ab6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curso/e95efa23-4ae8-4c9b-a746-88b639bead87",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curso",
+								"e95efa23-4ae8-4c9b-a746-88b639bead87"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curso/e95efa23-4ae8-4c9b-a746-88b639bead87",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Desenvolvimento de Sistemas\",\r\n    \"idInstituicao\": \"94ba252a-ade1-4f71-827c-bf1faaa40ab6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curso/e95efa23-4ae8-4c9b-a746-88b639bead87",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curso",
+								"e95efa23-4ae8-4c9b-a746-88b639bead87"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Turma",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/turma/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"turma\":\r\n    {\r\n        \"descricao\": \"Melhor turma\",\r\n        \"idCurso\": \"d0c1164a-0720-4baf-b674-e1036c1b3fb7\"\r\n    },\r\n    \"professores\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"102e74aa-72ac-4e76-bd27-263c3ebcc024\",\r\n        }\r\n    ],\r\n    \"alunos\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"846cb301-c9ca-42fd-8273-16c5ca926bc6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/turma/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"turma",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/turma/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"turma\":\r\n    {\r\n        \"descricao\": \"Melhor turma\",\r\n        \"idCurso\": \"d0c1164a-0720-4baf-b674-e1036c1b3fb7\"\r\n    },\r\n    \"professores\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"102e74aa-72ac-4e76-bd27-263c3ebcc024\",\r\n        }\r\n    ],\r\n    \"alunos\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"846cb301-c9ca-42fd-8273-16c5ca926bc6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/turma/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"turma",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/turma/buscar/nome/melhor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"turma\":\r\n    {\r\n        \"descricao\": \"Melhor turma\",\r\n        \"idCurso\": \"d0c1164a-0720-4baf-b674-e1036c1b3fb7\"\r\n    },\r\n    \"professores\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"102e74aa-72ac-4e76-bd27-263c3ebcc024\",\r\n        }\r\n    ],\r\n    \"alunos\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"846cb301-c9ca-42fd-8273-16c5ca926bc6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/turma/buscar/nome/melhor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"turma",
+								"buscar",
+								"nome",
+								"melhor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/turma/buscar/id/2537416d-9332-4cf7-acad-95f440eec8e2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"turma\":\r\n    {\r\n        \"descricao\": \"Melhor turma\",\r\n        \"idCurso\": \"d0c1164a-0720-4baf-b674-e1036c1b3fb7\"\r\n    },\r\n    \"professores\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"102e74aa-72ac-4e76-bd27-263c3ebcc024\",\r\n        }\r\n    ],\r\n    \"alunos\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"846cb301-c9ca-42fd-8273-16c5ca926bc6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/turma/buscar/id/2537416d-9332-4cf7-acad-95f440eec8e2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"turma",
+								"buscar",
+								"id",
+								"2537416d-9332-4cf7-acad-95f440eec8e2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/turma/2537416d-9332-4cf7-acad-95f440eec8e2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"turma\":\r\n    {\r\n        \"descricao\": \"Melhor turma do Brasil\",\r\n        \"idCurso\": \"d0c1164a-0720-4baf-b674-e1036c1b3fb7\"\r\n    },\r\n    \"professores\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"102e74aa-72ac-4e76-bd27-263c3ebcc024\",\r\n        }\r\n    ],\r\n    \"alunos\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"846cb301-c9ca-42fd-8273-16c5ca926bc6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/turma/2537416d-9332-4cf7-acad-95f440eec8e2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"turma",
+								"2537416d-9332-4cf7-acad-95f440eec8e2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/turma/2537416d-9332-4cf7-acad-95f440eec8e2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"turma\":\r\n    {\r\n        \"descricao\": \"Melhor turma do Brasil\",\r\n        \"idCurso\": \"d0c1164a-0720-4baf-b674-e1036c1b3fb7\"\r\n    },\r\n    \"professores\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"102e74aa-72ac-4e76-bd27-263c3ebcc024\",\r\n        }\r\n    ],\r\n    \"alunos\":\r\n    [\r\n        {\r\n            \"idUsuario\": \"846cb301-c9ca-42fd-8273-16c5ca926bc6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/turma/2537416d-9332-4cf7-acad-95f440eec8e2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"turma",
+								"2537416d-9332-4cf7-acad-95f440eec8e2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Dica",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/turma/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "texto",
+									"value": "Teste",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/Juninho/Desktop/banco-de-dados.jpg"
+								},
+								{
+									"key": "idUsuario",
+									"value": "15e19dfb-bdec-4cfd-b1ea-7755ddd719ff",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/dica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"dica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/dica/buscar/id/c765efa1-4160-4f92-8506-3e0cb5dac26d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "texto",
+									"value": "Teste",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/Juninho/Desktop/banco-de-dados.jpg"
+								},
+								{
+									"key": "idUsuario",
+									"value": "15e19dfb-bdec-4cfd-b1ea-7755ddd719ff",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/dica/buscar/id/c765efa1-4160-4f92-8506-3e0cb5dac26d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"dica",
+								"buscar",
+								"id",
+								"c765efa1-4160-4f92-8506-3e0cb5dac26d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/dica/buscar/palavra_chave/t",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "texto",
+									"value": "Teste",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/Juninho/Desktop/banco-de-dados.jpg"
+								},
+								{
+									"key": "idUsuario",
+									"value": "15e19dfb-bdec-4cfd-b1ea-7755ddd719ff",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/dica/buscar/palavra_chave/t",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"dica",
+								"buscar",
+								"palavra_chave",
+								"t"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/dica",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "texto",
+									"value": "Teste",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/Juninho/Desktop/banco-de-dados.jpg"
+								},
+								{
+									"key": "idUsuario",
+									"value": "15e19dfb-bdec-4cfd-b1ea-7755ddd719ff",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/dica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"dica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/dica/85d03475-5678-4126-b695-e6d863956a9e",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "texto",
+									"value": "Teste2",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/Juninho/Desktop/banco-de-dados.jpg"
+								},
+								{
+									"key": "idUsuario",
+									"value": "15e19dfb-bdec-4cfd-b1ea-7755ddd719ff",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/dica/85d03475-5678-4126-b695-e6d863956a9e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"dica",
+								"85d03475-5678-4126-b695-e6d863956a9e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/dica/85d03475-5678-4126-b695-e6d863956a9e",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "texto",
+									"value": "Teste2",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/Juninho/Desktop/banco-de-dados.jpg"
+								},
+								{
+									"key": "idUsuario",
+									"value": "15e19dfb-bdec-4cfd-b1ea-7755ddd719ff",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/dica/85d03475-5678-4126-b695-e6d863956a9e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"dica",
+								"85d03475-5678-4126-b695-e6d863956a9e"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Curtida",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/curtida",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "texto",
+									"value": "Teste2",
+									"type": "text"
+								},
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "/C:/Users/Juninho/Desktop/banco-de-dados.jpg"
+								},
+								{
+									"key": "idUsuario",
+									"value": "15e19dfb-bdec-4cfd-b1ea-7755ddd719ff",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curtida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curtida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curtida",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": \"217dc127-54ff-4113-9ead-6a5f198a5363\",\r\n    \"idDica\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curtida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curtida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curtida/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": \"217dc127-54ff-4113-9ead-6a5f198a5363\",\r\n    \"idDica\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curtida/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curtida",
+								"bdf62cd6-ae5a-4b48-b33a-745264ea6d09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curtida/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": \"217dc127-54ff-4113-9ead-6a5f198a5363\",\r\n    \"idDica\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curtida/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curtida",
+								"bdf62cd6-ae5a-4b48-b33a-745264ea6d09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/curtida/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": \"217dc127-54ff-4113-9ead-6a5f198a5363\",\r\n    \"idDica\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/curtida/bdf62cd6-ae5a-4b48-b33a-745264ea6d09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"curtida",
+								"bdf62cd6-ae5a-4b48-b33a-745264ea6d09"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ObjetivoAluno",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/ObjetivoAluno",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": \"217dc127-54ff-4113-9ead-6a5f198a5363\",\r\n    \"idDica\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/ObjetivoAluno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"ObjetivoAluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/ObjetivoAluno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nota\": 10,\r\n    \"idAlunoTurma\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\",\r\n    \"idObjetivo\": \"02075a5c-78da-46c7-9d53-72645ccfe89d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/ObjetivoAluno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"ObjetivoAluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/ObjetivoAluno/8f455ca0-009d-44e8-8b9b-964c46464527",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nota\": 5,\r\n    \"idAlunoTurma\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\",\r\n    \"idObjetivo\": \"02075a5c-78da-46c7-9d53-72645ccfe89d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/ObjetivoAluno/8f455ca0-009d-44e8-8b9b-964c46464527",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"ObjetivoAluno",
+								"8f455ca0-009d-44e8-8b9b-964c46464527"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/ObjetivoAluno/8f455ca0-009d-44e8-8b9b-964c46464527",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nota\": 5,\r\n    \"idAlunoTurma\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\",\r\n    \"idObjetivo\": \"02075a5c-78da-46c7-9d53-72645ccfe89d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/ObjetivoAluno/8f455ca0-009d-44e8-8b9b-964c46464527",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"ObjetivoAluno",
+								"8f455ca0-009d-44e8-8b9b-964c46464527"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/ObjetivoAluno/buscar/por_aluno/Daniel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nota\": 5,\r\n    \"idAlunoTurma\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\",\r\n    \"idObjetivo\": \"02075a5c-78da-46c7-9d53-72645ccfe89d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/ObjetivoAluno/buscar/por_aluno/Daniel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"ObjetivoAluno",
+								"buscar",
+								"por_aluno",
+								"Daniel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49932/api/ObjetivoAluno/buscar/id/8f455ca0-009d-44e8-8b9b-964c46464527",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nota\": 5,\r\n    \"idAlunoTurma\": \"c765efa1-4160-4f92-8506-3e0cb5dac26d\",\r\n    \"idObjetivo\": \"02075a5c-78da-46c7-9d53-72645ccfe89d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/ObjetivoAluno/buscar/id/8f455ca0-009d-44e8-8b9b-964c46464527",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"ObjetivoAluno",
+								"buscar",
+								"id",
+								"8f455ca0-009d-44e8-8b9b-964c46464527"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "http://localhost:49932/api/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"daniel@gmail.com\",\r\n    \"senha\": \"teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49932/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49932",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
