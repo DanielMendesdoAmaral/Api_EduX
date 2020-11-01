@@ -11,7 +11,7 @@ namespace Edux_Api_EFcore.Domains
     public abstract class BaseDomains
     {
         [Key]
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
         public BaseDomains() 
         {

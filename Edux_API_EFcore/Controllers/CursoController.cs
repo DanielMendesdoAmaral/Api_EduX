@@ -29,7 +29,6 @@ namespace Edux_Api_EFcore.Controllers
         /// </summary>
         /// <returns>Lista com todos os Cursos</returns>
         // GET: api/<CursoController>
-        [Authorize]
         [HttpGet]
         public IActionResult GetCurso()
         {

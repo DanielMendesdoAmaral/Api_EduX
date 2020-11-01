@@ -1,6 +1,8 @@
 ﻿using Edux_Api_EFcore.Contexts;
 using Edux_Api_EFcore.Domains;
 using Edux_Api_EFcore.Interfaces;
+using Edux_API_EFcore.Auxiliar;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +29,7 @@ namespace Edux_Api_EFcore.Repositories
             try
             {
 
-                return _ctx.Turmas.ToList();
+                return _ctx.Turmas.Include(t => t.AlunosTurmas).Include(t=>t.ProfessoresTurmas).Include(t=>t.Curso).ToList();
 
             }
             catch (Exception ex)
@@ -38,12 +40,11 @@ namespace Edux_Api_EFcore.Repositories
             }
         }
 
-
         public Turma BuscarPorId(Guid Id)
         {
             try
             {
-                return _ctx.Turmas.Find(Id);
+                return _ctx.Turmas.Include(t => t.AlunosTurmas).Include(t => t.ProfessoresTurmas).Include(t => t.Curso).FirstOrDefault(turma => turma.Id == Id);
             }
             catch (Exception ex)
             {
@@ -73,13 +74,13 @@ namespace Edux_Api_EFcore.Repositories
 
         #region Gravação
 
-        public void Adicionar(Turma turma, List<ProfessorTurma> professores, List<AlunoTurma> alunos)
+        public void Adicionar(ProfessoresAlunosTurma professoresAlunosTurma)
         {
             try
             {
                 Turma turmaJuntar = new Turma();
 
-                foreach (ProfessorTurma item in professores)
+                foreach (ProfessorTurma item in professoresAlunosTurma.professores)
                 {
                     turmaJuntar.ProfessoresTurmas.Add(new ProfessorTurma
                     {
@@ -89,19 +90,21 @@ namespace Edux_Api_EFcore.Repositories
                     });
                 }
 
-                foreach (AlunoTurma item in alunos)
+                foreach (AlunoTurma item in professoresAlunosTurma.alunos)
                 {
                     turmaJuntar.AlunosTurmas.Add(new AlunoTurma
                     {
-                        Matricula = item.Matricula,
+                        Matricula = Guid.NewGuid().ToString(),
                         IdUsuario = item.IdUsuario,
                         IdTurma = turmaJuntar.Id
                     });
                 }
 
-                turmaJuntar.Descricao = turma.Descricao;
-                turmaJuntar.Curso = turma.Curso;
-                turmaJuntar.IdCurso = turma.IdCurso;
+                turmaJuntar.Descricao = professoresAlunosTurma.turma.Descricao;
+                turmaJuntar.Curso = professoresAlunosTurma.turma.Curso;
+                turmaJuntar.IdCurso = professoresAlunosTurma.turma.IdCurso;
+
+                _ctx.Turmas.Add(turmaJuntar);
 
                 _ctx.SaveChanges();
             }
@@ -113,7 +116,7 @@ namespace Edux_Api_EFcore.Repositories
             }
         }
 
-        public void Editar(Guid id, Turma turma, List<ProfessorTurma> professores, List<AlunoTurma> alunos)
+        public void Editar(Guid id, ProfessoresAlunosTurma professoresAlunosTurma)
         {
             try
             {
@@ -122,7 +125,15 @@ namespace Edux_Api_EFcore.Repositories
                 if (turmaAlterar == null)
                     throw new Exception("Impossível alterar Turma pois faltam dados.");
 
-                foreach (ProfessorTurma item in professores)
+                //ANTES DE ADICIONAR OS NOVOS OBJETOS PRIMEIRO REMOVEMOS OS JÁ EXISTENTES
+
+                turmaAlterar.ProfessoresTurmas.Clear();
+                turmaAlterar.AlunosTurmas.Clear();
+
+                turmaAlterar.AlunosTurmas.AddRange(professoresAlunosTurma.alunos);
+                turmaAlterar.ProfessoresTurmas.AddRange(professoresAlunosTurma.professores);
+
+                /*foreach (ProfessorTurma item in professoresAlunosTurma.professores)
                 {
                     turmaAlterar.ProfessoresTurmas.Add(new ProfessorTurma
                     {
@@ -132,26 +143,25 @@ namespace Edux_Api_EFcore.Repositories
                     });
                 }
 
-                foreach (AlunoTurma item in alunos)
+                foreach (AlunoTurma item in professoresAlunosTurma.alunos)
                 {
                     turmaAlterar.AlunosTurmas.Add(new AlunoTurma
                     {
-                        Matricula = item.Matricula,
+                        Matricula = Guid.NewGuid().ToString(),
                         IdUsuario = item.IdUsuario,
                         IdTurma = turmaAlterar.Id
                     });
-                }
+                }*/
 
-                turmaAlterar.IdCurso = turma.IdCurso;
-                turmaAlterar.Descricao = turma.Descricao;
+                turmaAlterar.IdCurso = professoresAlunosTurma.turma.IdCurso;
+                turmaAlterar.Descricao = professoresAlunosTurma.turma.Descricao;
 
-                _ctx.Turmas.Update(turma);
+                _ctx.Turmas.Update(turmaAlterar);
 
                 _ctx.SaveChanges();
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.Message);
             }
         }

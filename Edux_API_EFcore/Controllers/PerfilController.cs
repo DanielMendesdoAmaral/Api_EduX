@@ -28,7 +28,6 @@ namespace Edux_Api_EFcore.Controllers
         /// </summary>
         /// <returns>Lista com todos os Perfis</returns>
         // GET: api/<PerfilController>
-        [Authorize(Roles = "Professor, Instituicao, Instituição")]
         [HttpGet]
         public IActionResult Get()
         {

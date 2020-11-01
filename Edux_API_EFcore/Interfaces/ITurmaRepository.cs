@@ -1,4 +1,5 @@
 ﻿using Edux_Api_EFcore.Domains;
+using Edux_API_EFcore.Auxiliar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,9 @@ namespace Edux_Api_EFcore.Interfaces
 
         List<Turma> BuscarPorNome(string nome);
 
-        void Adicionar(Turma turma, List<ProfessorTurma> professores, List<AlunoTurma> alunos);
+        void Adicionar(ProfessoresAlunosTurma professoresAlunosTurma);
 
-        void Editar(Guid id, Turma turma, List<ProfessorTurma> professores, List<AlunoTurma> alunos);
+        void Editar(Guid id, ProfessoresAlunosTurma professoresAlunosTurma);
 
         void Remover(Guid Id);
     }

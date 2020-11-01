@@ -15,7 +15,7 @@ namespace Edux_Api_EFcore.Utils
         {
             using (SHA256 sha256Hash = SHA256.Create())
             {  
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(Salt + Txt));
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(Txt + Salt));
  
                 StringBuilder builder = new StringBuilder();
                 for (int i = 0; i < bytes.Length; i++)

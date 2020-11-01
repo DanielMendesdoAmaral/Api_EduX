@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Edux_Api_EFcore.Domains;
 using Edux_Api_EFcore.Interfaces;
 using Edux_Api_EFcore.Repositories;
+using Edux_API_EFcore.Auxiliar;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,7 +30,6 @@ namespace Edux_Api_EFcore.Controllers
         /// </summary>
         /// <returns>Lista com todas as Turmas</returns>
         // GET: api/<TurmaController>
-        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -41,11 +41,7 @@ namespace Edux_Api_EFcore.Controllers
                 if (qtdTurmas == 0)
                     return NoContent();
 
-                return Ok(new
-                {
-                    totalCount = qtdTurmas,
-                    data = turmas
-                });
+                return Ok(turmas);
             }
             catch (Exception ex)
             {
@@ -60,7 +56,6 @@ namespace Edux_Api_EFcore.Controllers
         /// <param name="id">ID da Turma</param>
         /// <returns>Uma Turma</returns>
         // GET api/<TurmaController>/buscar/id/5
-        [Authorize(Roles = "Professor, Instituicao, Instituição")]
         [HttpGet("buscar/id/{id}")]
         public IActionResult Get(Guid id)
         {
@@ -119,13 +114,12 @@ namespace Edux_Api_EFcore.Controllers
         /// <param name="alunos">Objeto alunos</param>
         /// <returns>Turma Cadastrada</returns>
         // POST api/<TurmaController>
-        [Authorize(Roles = "Professor, Instituicao, Instituição")]
         [HttpPost]
-        public IActionResult Post([FromForm] Turma turma, [FromForm] List<ProfessorTurma> professores, [FromForm] List<AlunoTurma> alunos)
+        public IActionResult Post([FromBody] ProfessoresAlunosTurma professoresAlunosTurma)
         {
             try
             {
-                _turmaRepository.Adicionar(turma, professores, alunos);
+                _turmaRepository.Adicionar(professoresAlunosTurma);
 
                 return Ok();
             }
@@ -144,13 +138,12 @@ namespace Edux_Api_EFcore.Controllers
         /// <param name="alunos">Objeto alunos com as alterações</param>
         /// <returns>Informações alteradas da Turma</returns>
         // PUT api/<TurmaController>
-        [Authorize(Roles = "Professor, Instituicao, Instituição")]
         [HttpPut("{id}")]
-        public IActionResult Put(Guid id, [FromForm] Turma turma, [FromForm] List<ProfessorTurma> professores, [FromForm] List<AlunoTurma> alunos) 
+        public IActionResult Put(Guid id, [FromBody] ProfessoresAlunosTurma professoresAlunosTurma) 
         {
             try
             {
-                _turmaRepository.Editar(id, turma, professores, alunos);
+                _turmaRepository.Editar(id, professoresAlunosTurma);
 
                 return Ok();
             }
@@ -167,7 +160,6 @@ namespace Edux_Api_EFcore.Controllers
         /// <param name="id">ID da Turma</param>
         /// <returns>ID excluído</returns>
         // DELETE api/<TurmaController>/5
-        [Authorize(Roles = "Professor, Instituicao, Instituição")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

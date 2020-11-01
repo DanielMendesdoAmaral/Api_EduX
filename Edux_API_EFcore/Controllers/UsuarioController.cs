@@ -29,7 +29,6 @@ namespace Edux_Api_EFcore.Controllers
         /// <returns>Lista com todos os Usuários</returns>
         // GET: api/<UsuarioController>
         
-        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -55,7 +54,6 @@ namespace Edux_Api_EFcore.Controllers
         /// <param name="id">ID do Usuário</param>
         /// <returns>Um Usuário</returns>
         // GET api/<UsuarioController>/5
-       [Authorize(Roles = "Professor, Instituicao, Instituição")]
         [HttpGet("buscar/id/{id}")]
         public IActionResult Get(Guid id)
         {
@@ -119,7 +117,6 @@ namespace Edux_Api_EFcore.Controllers
         /// <param name="usuario">Objeto Usuário</param>
         /// <returns>Usuário Cadastrado</returns>
         // POST api/<UsuarioController>
-        [Authorize(Roles = "Professor, Instituicao, Instituição")]
         [HttpPost]
         public IActionResult Post(Usuario usuario)
         {

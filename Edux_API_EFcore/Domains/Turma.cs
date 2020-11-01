@@ -20,5 +20,11 @@ namespace Edux_Api_EFcore.Domains
         public List<ProfessorTurma> ProfessoresTurmas { get; set; }
 
         public List<AlunoTurma> AlunosTurmas { get; set; }
+
+        public Turma()
+        {
+            ProfessoresTurmas = new List<ProfessorTurma>();
+            AlunosTurmas = new List<AlunoTurma>();
+        }
     }
 }

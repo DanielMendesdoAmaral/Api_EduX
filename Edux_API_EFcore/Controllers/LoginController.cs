@@ -48,6 +48,7 @@ namespace Edux_Api_EFcore.Controllers
                new Claim(JwtRegisteredClaimNames.NameId, informacoesUsuario.Nome),
                new Claim(JwtRegisteredClaimNames.Email, informacoesUsuario.Email),
                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+               new Claim("role", informacoesUsuario.Perfil.Permissao),
                new Claim(ClaimTypes.Role, informacoesUsuario.Perfil.Permissao)
            };
 
